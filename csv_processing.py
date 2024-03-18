@@ -1,4 +1,3 @@
-import pandas as pd
 from PIL import Image
 import csv
 
@@ -20,9 +19,6 @@ def csv2png (file_path):
         for j in range(0, width):
             pixel_value = int(pixels_data[i][j])
             img.putpixel((j, i), pixel_value)
-
-    # img.save('output_image.png')
-    # img.show()
     return img
 
         
